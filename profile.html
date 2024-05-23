@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Профиль</title>
+        <link href="./assets/styles/main.css" rel="stylesheet" />
+		<link href="./assets/styles/profile.css" rel="stylesheet" />
+    </head>
+    <body>
+        
+		<header class="blur">
+			<center class="p1em">
+				<h1 class="m0em">Interaktives Wörterbuch</h1>
+				<h3 class="m0em">интерактивный словарь</h3>
+			</center>
+			<div class="nav flex fvcenter">
+				<a href="./main.html" class="button m1em">Главная</a>
+				<a href="./profile.html" class="button m1em">Профиль</a>
+				<a href="./main.html" class="button m1em">Назад</a>
+			</div>
+		</header>
+		<content class="flex fcenter fvcenter horizontal space-evenly">
+			
+			<div class="plane w30em p1em">
+				<div class="flex space-around">
+					<div id="user_avatar">
+						<img style="display:none;" src="" />
+						<input style="display:block;" class="invizbutton" type="submit" value="Загрузить фото" />
+					</div>
+					<div id="user_info">
+						<div id="user_id">user_id</div>
+						<div id="user_name">user_name</div>
+						<div id="user_status">user_status</div>
+						<div id="user_level">user_level</div>
+					</div>
+					<div class="">
+						<a href="./login.html" class="button">Выйти</a>
+					</div>
+				</div>
+				<div id="user_description" class="plane h20em p1em">
+					О себе...
+				</div>
+			</div>
+			
+			<div class="w40em flex vertical space-evenly hf">
+				
+				<div id="user_lessons" class="plane w40em p1em h20em">
+				
+					<div id="lesson_no_-1" class="plane flex horizontal space-between p1em mb1em">
+						<div class="lesson_name w20em">Урок 1</div>
+						<a href="" class="button">Начать</a>
+					</div>
+					<div id="lesson_no_-1" class="plane flex horizontal space-between p1em mb1em">
+						<div class="lesson_name w20em">Урок 2</div>
+						<a href="" class="button">Начать</a>
+					</div>
+					
+				</div>
+				
+				<div id="theacher_menu" class="plane w40em p1em flex horizontal space-evenly">
+					<a href="./lessons_list_editor.html" class="button">Добавить урок</a>
+					<a href="" class="button">Создать карточку</a>
+					<a href="" class="button">Ученики</a>
+				</div>
+				
+			</div>
+			
+		</content>
+    </body>
+</html>

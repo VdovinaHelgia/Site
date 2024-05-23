@@ -1,0 +1,10 @@
+#user_avatar {
+    width: 10em;
+    height: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #ffffff75;
+    margin: 1em;
+}

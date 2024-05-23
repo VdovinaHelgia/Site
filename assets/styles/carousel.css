@@ -1,0 +1,27 @@
+.carousel{
+	width: 20em;
+	height: 20em;
+	overflow: visible;
+	white-space: nowrap;
+	position: relative;
+}
+.carousel>div{
+	width: 20em;
+	height: 20em;
+	display: inline-block;
+	transition: left 0.2s ease-out, opacity 0.2s ease-out;
+	position: absolute;
+}
+
+.carousel>div.prev{
+	left:-22em;
+	opacity: 0;
+}
+.carousel>div.current{
+	left:0;
+	opacity: 1;
+}
+.carousel>div.next{
+	left:22em;
+	opacity: 0;
+}

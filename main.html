@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Главная</title>
+        <link href="./assets/styles/main.css" rel="stylesheet" />
+		<link href="./assets/styles/carousel.css" rel="stylesheet" />
+		<script src="./assets/scripts/carousel.js"></script>
+    </head>
+    <body>
+        
+		<header class="blur">
+			<center class="p1em">
+				<h1 class="m0em">Interaktives Wörterbuch</h1>
+				<h3 class="m0em">интерактивный словарь</h3>
+			</center>
+			<div class="nav flex fvcenter">
+				<a href="./main.html" class="button m1em">Главная</a>
+				<a href="./profile.html" class="button m1em">Профиль</a>
+				<a href="./main.html" class="button m1em">Назад</a>
+			</div>
+		</header>
+		
+		<content class="flex fcenter fvcenter horizontal space-evenly">
+			
+			<div class="card">
+				<div>
+					<div id="cards_carousel" class="carousel">
+						
+						<div>
+							<div class="card">
+								<img src="./assets/images/mainG1.jpg" />
+								<div>
+									<div class="p2em textwhite wrap">
+			Im Deutschen werden Zahlen nach 20 rückwärts gelesen!<br /><br />
+			In einem der afrikanischen Länder ist Deutsch die Amtssprache.<br /><br />
+			Deutsch ist die Sprache der Monsterwörter. Einige Konzepte, die wir in Phrasen übersetzen, werden zu einem Wort zusammengefasst.<br /><br />
+			Das deutsche Wort für „Mädchen“ Mädchen ist Neutrum.<br /><br />
+			Немецкий – это удивительный язык. Если вы решили пойти на курсы немецкого языка, то вы сможете выучить еще больше удивительных фактов об этом языке.<br /><br />
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div>
+							<div class="card">
+								<img src="./assets/images/mainG2.jpg" />
+								<div></div>
+							</div>
+						</div>
+						
+						<div>
+							<div class="card">
+								<img src="./assets/images/mainG3.jpg" />
+								<div></div>
+							</div>
+						</div>
+						
+						<div>
+							<div class="card">
+								<img src="./assets/images/mainG4.jpg" />
+								<div></div>
+							</div>
+						</div>
+						
+						<div>
+							<div class="card">
+								<img src="./assets/images/mainG5.jpg" />
+								<div></div>
+							</div>
+						</div>
+						
+					</div>
+					
+					<div class="carousel_button right" onclick="shiftCarousel(cards_carousel,1)">
+						<img src="./assets/images/coriusel_botton_right.png" />
+					</div>
+					
+					<div class="carousel_button left" onclick="shiftCarousel(cards_carousel,-1)">
+						<img src="./assets/images/coriusel_botton_left.png" />
+					</div>
+				</div>
+			</div>
+			
+			<a href="./dictionary.html" class="card nonedecorator">
+				<img src="./assets/images/dictionary.jpg" />
+				<div class="flex fcenter fvcenter">
+					<div class="plane p1em blur textwhite">
+						<center>
+							<h1 class="m0em">Wörterbuch</h1>
+							словарь
+						</center>
+					</div>
+				</div>
+			</a>
+			
+			<a href="./game.html" class="card nonedecorator">
+				<img src="./assets/images/game.png" />
+				<div>
+					
+				</div>
+			</a>
+			
+		</content>
+    </body>
+</html>
