@@ -3,56 +3,64 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Галерея</title>
-        <link href="./index.css" rel="stylesheet" />
-        <link href="./gallery-lib/gallery.css" rel="stylesheet" />
-        <script src="./gallery-lib/gallery.js"></script>
+        <title>Игра</title>
+        <link href="./assets/styles/main.css" rel="stylesheet" />
+		<link href="./assets/styles/carousel.css" rel="stylesheet" />
+		<script src="./assets/scripts/carousel.js"></script>
     </head>
     <body>
-        <div id="gallery">
-            <div class="slide active">
-                <img src="./images/a.jpg" alt="А"/>
-            </div>
-            <div class="slide">
-                <img src="./images/b.jpg" alt="Б"/>
-            </div>
-            <div class="slide">
-                <img src="./images/v.jpg" alt="В"/>
-            </div>
-            <div class="slide">
-                <img src="./images/g.jpg" alt="Г"/>
-            </div>
-            <div class="slide">
-                <img src="./images/d.jpg" alt="Д"/>
-            </div>
-            <div class="slide">
-                <img src="./images/e.png" alt="е"/>
-            </div>
-            <div class="slide">
-                <img src="./images/z.png" alt="З"/>
-            </div>
-			<div class="slide">
-                <img src="./images/i.png" alt="И"/>
-            </div>
-            <div class="slide">
-                <img src="./images/ii.png" alt="Й"/>
-            </div>
-            <div class="slide">
-                <img src="./images/k.png" alt="К"/>
-            </div>
-            <div class="slide">
-                <img src="./images/l.png" alt="Л"/>
-            </div>
-            <div class="slide">
-                <img src="./images/m.png" alt="М"/>
-            </div>
-            <div class="slide">
-                <img src="./images/n.png" alt="Н"/>
-            </div>
-            <div class="slide">
-                <img src="./images/o.png" alt="О"/>
-            </div>
-        </div>
+        
+		<header class="blur">
+			<center class="p1em">
+				<h1 class="m0em">Interaktives Wörterbuch</h1>
+				<h3 class="m0em">интерактивный словарь</h3>
+			</center>
+			<div class="nav flex fvcenter">
+				<a href="./main.html" class="button m1em">Главная</a>
+				<a href="./profile.html" class="button m1em">Профиль</a>
+				<a href="./main.html" class="button m1em">Назад</a>
+			</div>
+		</header>
+		
+		<content class="flex fcenter fvcenter horizontal space-evenly">
+			
+			<div class="plane p1em flex vertical fvcenter">
+				
+				<div class="plane mb1em">
+					<center><input class="inputtext w40em" type="text" name="name" placeholder="введите перевод" required /></center>
+				</div>
+				
+				<div id="cards_carousel" class="carousel w20em mb1em">
+					
+					<div>
+						<div class="plane flex fcenter fvcenter w20em h20em">
+							<h2 class="word">Эксплуатация</h2>
+							<input class="button" type="submit" value="Показать перевод" />
+						</div>
+					</div>
+					
+					<div>
+						<div class="plane flex fcenter fvcenter w20em h20em">
+							<h2 class="word">Поиск</h2>
+							<input class="button" type="submit" value="Показать перевод" />
+						</div>
+					</div>
+					
+					<div>
+						<div class="plane flex fcenter fvcenter w20em h20em">
+							<h2 class="word">Пользователь</h2>
+							<input class="button" type="submit" value="Показать перевод" />
+						</div>
+					</div>
+					
+				</div>
+				
+				<div id="answer_state" class="plane m1em p1em">
+					Правильно!
+				</div>
+				
+			</div>
+			
+		</content>
     </body>
-	<script src="./index.js"></script>
 </html>
