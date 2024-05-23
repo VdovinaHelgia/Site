@@ -16,7 +16,7 @@ jobs:
         with:
           php-version: '8.0'
       - name: Run test
-        run: php cdciTest.php
+        run: php test.php
 
     deploy:
       runs-on: ubuntu-latest
